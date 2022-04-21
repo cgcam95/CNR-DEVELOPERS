@@ -4,10 +4,9 @@ import './style.css'
 
 const Header = () => {
   return (
-    <div id='header'>
-        <div>
-        <Link className='fs-1' to="/"><h1>CNR Developers</h1></Link>
-        <ul className="nav justify-content-end fs-4">
+    <div className = "d-flex mb-3 border-bottom border-warning">
+        <Link className='me-auto fs-1' to="/"><h1 className='px-5 pt-3'>CNR Developers</h1></Link>
+        <ul className="nav justify-content-end fs-4 p-2 pe-4">
           <li className="nav-item">
           <Link className="nav-link" to="/services">Services</Link>
           </li>
@@ -20,10 +19,7 @@ const Header = () => {
           <li className="nav-item">
           <Link className="nav-link" to="/contact">Contact</Link>
           </li>
-
         </ul>
-        </div> 
-
     </div>
   )
 }
